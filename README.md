@@ -1,10 +1,7 @@
-### Oi!
+### Opa
 
-Bem-vindo a minha conta no GitHub!
+Essa é minha conta...
 
-Eu tenho 15 anos e eu gosto de programar em Python e outras linguagens.
-O meu programador favorito é o [Gustavo Guanabara](https://github.com/gustavoguanabara/), ele que me ensinou a programar em Python :D\
-Eu também gosto do [Luiz Otávio Miranda](https://github.com/luizomf)\
-E eu tenho que agradecer ao [Alfred Baudisch](https://github.com/alfredbaudisch) por me introduzir ao mundo da programação!
-
-Talvez eu vou ficar mais ativo no GitHub depois...
+Eu tenho 17 anos e eu gosto de me aventurar no mundo tech :/\
+Às vezes posto alguns projetos aqui, mas por enquantos eles só são de diversão/estudo\
+Agradeço ao [Alfred Baudisch](https://github.com/alfredbaudisch) por me introduzir ao mundo da programação
