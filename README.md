@@ -39,7 +39,10 @@ Agradeço ao [Alfred Baudisch](https://github.com/alfredbaudisch) e ao [Gustavo 
 ## 📈 Atividade
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LucassFelipe&theme=tokyo-night&hide_border=true" />
+  <img
+    src="https://raw.githubusercontent.com/LucassFelipe/LucassFelipe/activity-assets/activity-365d.svg"
+    alt="Atividade de contribuições no GitHub"
+  />
 </p>
 
 ---
