@@ -25,7 +25,9 @@ jobs:
         uses: dturovskiy/deus-commit-chart@v1
         with:
           username: ${{ github.repository_owner }}
-          token: ${{ github.token }}
+          # Mesmo motivo do snake.yml: o token padrão do Actions usa UTC.
+          # Com um PAT da conta, o calendário respeita o fuso local (UTC-3).
+          token: ${{ secrets.PROFILE_TOKEN || github.token }}
           default-days: "30"
           ranges: "30,90,365"
           layout: spacious
