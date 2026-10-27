@@ -2,7 +2,8 @@ name: Update Profile Stats
 
 on:
   schedule:
-    - cron: "43 0 * * *"
+    # 03:43 UTC = 00:43 em UTC-3 (horário local)
+    - cron: "43 3 * * *"
 
   workflow_dispatch:
 

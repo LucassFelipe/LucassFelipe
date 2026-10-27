@@ -2,7 +2,8 @@ name: Update Activity Chart
 
 on:
   schedule:
-    - cron: "17 0 * * *"
+    # 03:17 UTC = 00:17 em UTC-3 (horário local)
+    - cron: "17 3 * * *"
 
   workflow_dispatch:
 
