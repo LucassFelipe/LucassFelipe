@@ -22,8 +22,8 @@ Agradeço ao [Alfred Baudisch](https://github.com/alfredbaudisch) e ao [Gustavo 
 ## 📊 Estatísticas do GitHub
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LucassFelipe&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucassFelipe&layout=compact&langs_count=8&theme=tokyonight" />
+  <img height="180em" src="./profile/stats.svg" alt="Estatísticas do GitHub" />
+  <img height="180em" src="./profile/top-langs.svg" alt="Linguagens mais usadas" />
 </p>
 
 ---

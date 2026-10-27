@@ -1,0 +1,74 @@
+name: Update Profile Stats
+
+on:
+  schedule:
+    - cron: "43 0 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "profile/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Sem o PAT o card seria gerado só com dados públicos e sobrescreveria
+      # os cards que já incluem os commits privados. Por isso falhamos aqui.
+      - name: Check profile token
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          if [ -z "$PROFILE_TOKEN" ]; then
+            echo "::error::Defina o segredo PROFILE_TOKEN com escopo repo + read:user para incluir os repositórios privados."
+            exit 1
+          fi
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&include_all_commits=true
+          path: profile/stats.svg
+          token: ${{ secrets.PROFILE_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&theme=tokyonight
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_TOKEN }}
+          fail_on_error: true
+
+      - name: Commit cards
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/stats.svg profile/top-langs.svg
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração nos cards."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile stats [skip ci]"
+          git push
