@@ -31,7 +31,7 @@ Agradeço ao [Alfred Baudisch](https://github.com/alfredbaudisch) e ao [Gustavo 
 ## 🔥 Sequência de Contribuições
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=LucassFelipe&theme=tokyonight&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=LucassFelipe&theme=tokyonight&hide_border=true&timezone=America%2FSao_Paulo" />
 </p>
 
 ---
