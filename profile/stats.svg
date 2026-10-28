@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Lucas Felipe&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 5, Total Commits  : 2207, Total PRs: 0, Total Issues: 0, Contributed to (last year): 3</desc>
+        <desc id="descId">Total Stars Earned: 5, Total Commits  : 2230, Total PRs: 0, Total Issues: 0, Contributed to (last year): 3</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 198.67848163017382;
+        stroke-dashoffset: 198.53499499208033;
       }
     }
   
