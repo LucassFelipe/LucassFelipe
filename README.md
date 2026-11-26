@@ -14,7 +14,7 @@ Agradeço ao [Alfred Baudisch](https://github.com/alfredbaudisch) e ao [Gustavo 
 ## 🛠️ Tecnologias e Ferramentas
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,django,js,ts,react,bootstrap,postgres,git,github,linux,nginx" />
+  <img src="https://skillicons.dev/icons?i=python,django,js,ts,nextjs,nestjs,react,bootstrap,postgres,docker,git,github,linux,nginx" />
 </p>
 
 ---
